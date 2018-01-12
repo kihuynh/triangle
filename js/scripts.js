@@ -20,6 +20,9 @@ $(document).ready(function(){
     }
 
     else if (side1 != side2 && side1 === side3) {
+      // if (side1 + side2 <= side3)
+
+
     $("#isosceles").show();
     }
 
@@ -29,6 +32,10 @@ $(document).ready(function(){
 
     else if (side1 === side2 && side1 != side3) {
     $("#isosceles").show();
+    }
+
+    else if (side1 != side2 && side1 != side3 && side2 != side3) {
+      $("#scalene").show();
     }
 
 
